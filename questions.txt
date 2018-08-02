@@ -1,0 +1,2 @@
+Is the functional summary always static in terms of its content (always the 9 subjects it covers)?
+Why is some information in advance directives and emergency plan greyed out
