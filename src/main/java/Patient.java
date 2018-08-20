@@ -5,21 +5,22 @@ public class Patient {
 
     public Patient(CarePlan thePlan) {
         setMyPlan(thePlan);
-        setName();
-        setSSI();
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName() {
-        this.name = getMyPlan().getName();
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getSSI() {
-        return SSI;
+    public void setSSI(String SSI) {
+        this.SSI = SSI;
     }
+
+
+
 
     public void setSSI() {
         this.SSI = getMyPlan().getSSI();

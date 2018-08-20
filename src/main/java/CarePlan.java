@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class CarePlan {
 
+    private static CarePlan instance = null;
+
     private String summary;
     private String name, address, phoneNumber, DOB, SSI;
     private ArrayList<String> activeProblems; //TODO potentially initialize?
@@ -11,18 +13,25 @@ public class CarePlan {
     private String homeSetting;
     private ArrayList<String> supportSystem;
     private ArrayList<String> functionalSummary;
-    private ArrayList<String> advanceDirectives;
+    private String advanceDirectives;
     private ArrayList<String> equipmentAtHome;
     private ArrayList<String> medicationManagement;
     private String emergencyPlan;
+    private String resuscitationStatus;
+    private ArrayList<String> DPOA;
     private String diet;
     private String exercise;
     private String scheduling;
 
-    public ArrayList<String> errors;
+    private CarePlan() {
 
-    public CarePlan() {
+    }
 
+    public static CarePlan getInstance() {
+        if(instance == null) {
+            instance = new CarePlan();
+        }
+        return instance;
     }
 
     public String getSummary() {
@@ -70,12 +79,6 @@ public class CarePlan {
     }
 
     public void setSSI(String SSI) {
-        if(!(SSI.length() == 11)) { //checks if SSI was input properly
-            errors.add("SSI");
-        }
-        else if(errors.contains("SSI")) { //if SSI was input properly and it had previously not been, removes the issue
-            errors.remove("SSI");
-        }
         this.SSI = SSI;
     }
 
@@ -135,11 +138,11 @@ public class CarePlan {
         this.functionalSummary = functionalSummary;
     }
 
-    public ArrayList<String> getAdvanceDirectives() {
+    public String getAdvanceDirectives() {
         return advanceDirectives;
     }
 
-    public void setAdvanceDirectives(ArrayList<String> advanceDirectives) {
+    public void setAdvanceDirectives(String advanceDirectives) {
         this.advanceDirectives = advanceDirectives;
     }
 
@@ -189,5 +192,21 @@ public class CarePlan {
 
     public void setScheduling(String scheduling) {
         this.scheduling = scheduling;
+    }
+
+    public String getResuscitationStatus() {
+        return resuscitationStatus;
+    }
+
+    public void setResuscitationStatus(String resuscitationStatus) {
+        this.resuscitationStatus = resuscitationStatus;
+    }
+
+    public ArrayList<String> getDPOA() {
+        return DPOA;
+    }
+
+    public void setDPOA(ArrayList<String> DPOA) {
+        this.DPOA = DPOA;
     }
 }

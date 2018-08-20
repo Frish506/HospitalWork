@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CarePlanViewerController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="892.0" fitWidth="918.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/CarePlanEmpty.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="summaryText" layoutX="29.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary" wrappingWidth="375.0" />
+      <Text fx:id="activeProblemsText" layoutX="29.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active" wrappingWidth="165.9830722808838" />
+      <Text fx:id="medicationsText" layoutX="224.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meds" wrappingWidth="179.9830722808838" />
+      <Text fx:id="socialText" layoutX="425.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social" wrappingWidth="236.9830722808838" />
+      <Text fx:id="medicalTeamText" layoutX="425.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MedicalTeam" wrappingWidth="236.9830690100789" />
+      <Text fx:id="homeSettingText" layoutX="29.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="632.9830722808838" />
+      <Text fx:id="supportText" layoutX="29.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Support" wrappingWidth="287.9830722808838" />
+      <Text fx:id="functionalText" layoutX="346.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Functional" wrappingWidth="313.09635162353516" />
+      <Text fx:id="advanceText" layoutX="29.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advance" wrappingWidth="287.98306838423014" />
+      <Text fx:id="equipmentText" layoutX="346.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment" wrappingWidth="114.68489074707031" />
+      <Text fx:id="medicationManagementText" layoutX="484.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medication" wrappingWidth="179.98306789249182" />
+      <Text fx:id="emergencyText" layoutX="345.0" layoutY="749.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency" wrappingWidth="313.0963472581934" />
+      <Text fx:id="dietText" layoutX="29.0" layoutY="867.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diet" wrappingWidth="106.98307228088379" />
+      <Text fx:id="excerciseText" layoutX="165.0" layoutY="869.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Excercise" wrappingWidth="327.9830722808838" />
+      <Text fx:id="schedulingText" layoutX="521.0" layoutY="870.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scheduling" wrappingWidth="138.9830722808838" />
+   </children>
+</AnchorPane>
